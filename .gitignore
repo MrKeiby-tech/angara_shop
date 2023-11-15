@@ -1,0 +1,7 @@
+bitrix/* 
+upload/*
+*.xml
+logs/*
+composer.lock
+vendor/* 
+bitrix/* 

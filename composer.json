@@ -1,0 +1,10 @@
+{
+    "require": {
+        "andreyryabin/sprint.migration": "^4.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
