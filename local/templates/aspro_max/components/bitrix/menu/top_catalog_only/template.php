@@ -83,9 +83,6 @@ $bManyItemsMenu = ($MENU_TYPE == '4');
 										<?=CMax::showIconSvg($arItem["PARAMS"]["ICON"], SITE_TEMPLATE_PATH.'/images/svg/'.$arItem["PARAMS"]["ICON"].'.svg', '', '');?>
 									<?endif;?>
 									<?=$arItem["TEXT"]?>
-									<?if(isset($arItem["PARAMS"]["CLASS"]) && strpos($arItem["PARAMS"]["CLASS"], 'catalog') !== false):?>
-										<?=CMax::showSpriteIconSvg(SITE_TEMPLATE_PATH."/images/svg/trianglearrow_sprite.svg#trianglearrow_down", "svg-inline-down", ['WIDTH' => 5,'HEIGHT' => 3, 'INLINE' => 'N']);?>
-									<?endif;?>
 									<div class="line-wrapper"><span class="line"></span></div>
 								</div>
 							</a>

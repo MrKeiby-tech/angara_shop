@@ -440,6 +440,7 @@ body .wrapper1.basket_normal .top-block .wb .wrap_icon.person .dropdown-menu {
   font-size: 1em;
   font-weight: bold;
   line-height: 18px;
+  z-index: 20;
 }
 .top-block-item .phone.with_dropdown:after {
   margin-top: -1px;
@@ -730,7 +731,7 @@ body .wrapper1 .header-v6 .logo-row .subbottom {
 
 .long_search .basket-link {
   padding-right: 0;
-  padding-left: 35px
+  padding-left: 25px
 }
 .wrapper1 .header-v17 .logo_and_menu-row .menu-only .mega-menu .wrap > a .svg.svg-inline-down {
   display: inline-block;

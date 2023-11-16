@@ -1,3 +1,8 @@
+:root{
+  --new_design_green: #009746;
+  --new_border_radius: 60px;
+}
+
 body {
   width: 100%;
   position: relative;
@@ -1121,7 +1126,7 @@ body .btn.btn-transparent-border-color:hover {
 .font_upper_xs {
   font-size: 0.6em;
   line-height: 1.3em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 0.8px;
 } /*9px*/
 
@@ -1190,3 +1195,20 @@ blockquote p {
   -moz-line-clamp: 12;
   overflow: hidden;
 }
+.new__social{ 
+  margin-right: 5px;
+
+}
+.basket_normal .logo_and_menu-row .wb .wrap_icon.person, .basket_normal .logo_and_menu-row.wb .wrap_icon.person{
+    position: relative;
+    bottom: 3px;
+    width: 15px;
+}
+
+
+.new__basket{ 
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+ }

@@ -37,7 +37,7 @@
 }
 .mega-menu .menu-item.dropdown .wrap,
 .mega-menu .menu-item.dropdown .wrap > a {
-  background-color: inherit;
+  /*background-color: white;*/
 }
 .mega-menu .menu-item.dropdown .wrap > a,
 .mega-menu .menu-item.dropdown .wrap > a path {

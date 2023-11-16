@@ -25,21 +25,7 @@ $dopClass .= ' high_one_row_header';
 						</div>
 					</div>
 				<?endif;?>
-				<div class="header__top-item phone-wrapper">
-					<div class="phone-block">
-						<?if($bPhone):?>
-							<div class="inline-block">
-								<?CMax::ShowHeaderPhones('no-icons');?>
-							</div>
-						<?endif?>
-						<?$callbackExploded = explode(',', $arTheme['SHOW_CALLBACK']['VALUE']);
-						if( in_array('HEADER', $callbackExploded) ):?>
-							<div class="inline-block">
-								<span class="callback-block animate-load font_upper_xs colored" data-event="jqm" data-param-form_id="CALLBACK" data-name="callback"><?=GetMessage("CALLBACK")?></span>
-							</div>
-						<?endif;?>
-					</div>
-				</div>
+				
 				<div class="header__top-item dotted-flex-1 hide-dotted">
 					<div class="menus">
 						<?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
@@ -55,34 +41,27 @@ $dopClass .= ' high_one_row_header';
 						);?>
 					</div>
 				</div>	
-				<div class="right-icons header__top-item logo_and_menu-row logo_top_white icons_top showed">
-					<div class="line-block line-block--40 line-block--40-1200">
-						<?$arShowSites = \Aspro\Functions\CAsproMax::getShowSites();?>
-						<?$countSites = count($arShowSites);?>
-						<?if ($countSites > 1) :?>
-							<div class="line-block__item ">
-								<div class="wrap_icon inner-table-block">
-									<?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-										array(
-											"COMPONENT_TEMPLATE" => ".default",
-											"PATH" => SITE_DIR."/include/header_include/site.selector.php",
-											"SITE_LIST" => $arShowSites,
-											"AREA_FILE_SHOW" => "file",
-											"AREA_FILE_SUFFIX" => "",
-											"AREA_FILE_RECURSIVE" => "Y",
-											"EDIT_TEMPLATE" => "include_area.php",
-										),
-										false, array("HIDE_ICONS" => "Y")
-									);?>
-								</div>
+
+				<div class="header__top-item phone-wrapper">
+					<div class="phone-block">
+						<?if($bPhone):?>
+							<a href="" class="new__social">
+								<img src="<?=SITE_TEMPLATE_PATH.'/images/social/whatapp.svg'?>" alt="">
+							</a>
+							<a href="" class="new__social">
+								<img src="<?=SITE_TEMPLATE_PATH.'/images/social/telegram.svg'?>" alt="">
+							</a>
+							<div class="inline-block">
+								<?CMax::ShowHeaderPhones('no-icons');?>
+							</div>
+						<?endif?>
+						<?$callbackExploded = explode(',', $arTheme['SHOW_CALLBACK']['VALUE']);
+						if( in_array('HEADER', $callbackExploded) ):?>
+							<div class="inline-block">
+								<span class="callback-block animate-load font_upper_xs colored" data-event="jqm" data-param-form_id="CALLBACK" data-name="callback"><?=GetMessage("CALLBACK")?></span>
 							</div>
 						<?endif;?>
-						<div class="line-block__item no-shrinked">
-							<div class="wrap_icon inner-table-block1 person">
-								<?=CMax::showCabinetLink(true, true, 'big');?>
-							</div>
-						</div>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</div>

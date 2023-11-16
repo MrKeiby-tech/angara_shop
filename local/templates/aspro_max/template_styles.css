@@ -3242,7 +3242,7 @@ body .basket-link .js-basket-block .count {
 
 .logo-row .wrap_icon .svg,
 .basket-link .svg {
-  opacity: 0.5;
+  opacity: 1;
 }
 .basket-link:hover .svg,
 .top-btn:hover .svg,
@@ -3631,8 +3631,9 @@ body .logo-row .phone .svg-inline-down {
 /*.logo_and_menu-row .phone .more_phone{font-size:1.006289em;}*/
 .logo_and_menu-row .callback-block {
   margin: 0 0 0 13px;
-  font-size: 0.6em;
-  text-transform: uppercase;
+  font-size: 0.8em;
+  border-bottom: 1px dashed;
+  padding-bottom: 1px;
   letter-spacing: 0.8px;
 }
 .logo_and_menu-row .search-block {
@@ -3706,13 +3707,14 @@ body .logo-row .phone .svg-inline-down {
 }
 .logo_and_menu-row .search .search-input {
   padding: 0 44px 0 16px;
+  border-radius: var(--new_border_radius);
   height: 42px;
   font-size: 0.867em;
   line-height: 40px;
   background: #fafafa;
   background: var(--light_bg_black);
-  border: 1px solid #ececec;
-  border-color: var(--stroke_black);
+  border: 1px solid white;
+  border-color: white;
   color: var(--white_text_black);
 }
 .logo_and_menu-row .search.search--hastype .search-input {

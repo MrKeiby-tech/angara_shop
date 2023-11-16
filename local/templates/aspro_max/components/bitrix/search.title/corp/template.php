@@ -52,35 +52,8 @@ if ($bShowSearchType) {
 							</button>
 						<?endif;?>
 
-						<?if ($bShowSearchType):?>
-							<div class="dropdown-select searchtype">
-								<input type="hidden" name="type" value="<?=$searchType?>" />
-
-								<div class="dropdown-select__title darken font_xs">
-									<span><?=GetMessage($searchType === 'all' ? 'SEARCH_IN_SITE' : 'SEARCH_IN_CATALOG')?></span>
-									<?=CMax::showIconSvg("search-down", SITE_TEMPLATE_PATH.'/images/svg/trianglearrow_down.svg', '', '', true, false);?>
-								</div>
-
-								<div class="dropdown-select__list dropdown-menu-wrapper" role="menu">
-									<!--noindex-->
-									<div class="dropdown-menu-inner rounded3">
-										<div class="dropdown-select__list-item font_xs">
-											<span class="dropdown-select__list-link<?=($searchType === 'all' ? ' dropdown-select__list-link--current' : ' darken')?>" data-type="all">
-												<span><?=GetMessage('SEARCH_IN_SITE_FULL')?></span>
-											</span>
-										</div>
-										<div class="dropdown-select__list-item font_xs">
-											<span class="dropdown-select__list-link<?=($searchType === 'catalog' ? ' dropdown-select__list-link--current' : ' darken')?>" data-type="catalog">
-												<span><?=GetMessage('SEARCH_IN_CATALOG_FULL')?></span>
-											</span>
-										</div>
-									</div>
-									<!--/noindex-->
-								</div>
-							</div>
-						<?endif;?>
-
-						<span class="close-block inline-search-hide"><?=CMax::showIconSvg("search svg-close close-icons colored_theme_hover", SITE_TEMPLATE_PATH."/images/svg/Close_white_path.svg");?></span>
+						<span class="close-block inline-search-hide"><?=CMax::showIconSvg("search svg-close close-icons colored_theme_hover", SITE_TEMPLATE_PATH."/images/svg/Close_white_path.svg");?>
+						</span>
 					</div>
 				</form>
 			</div>

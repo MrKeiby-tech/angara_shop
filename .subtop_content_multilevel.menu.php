@@ -4,7 +4,7 @@ $aMenuLinks = Array(
 		"Акции", 
 		"/sale/", 
 		Array(), 
-		Array("ICON"=> "icon_discount"), 
+		Array("ICON"=>"icon_discount"), 
 		"" 
 	),
 	Array(
@@ -36,7 +36,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Компания", 
+		"О компании", 
 		"/company/", 
 		Array(), 
 		Array(), 

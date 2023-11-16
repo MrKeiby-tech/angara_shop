@@ -227,6 +227,10 @@ body .centered .menu-row .menu-only {
 
 .menu-row .mega-menu table td.dropdown.wide_menu > .wrap {
   position: static;
+  background-color: var(--new_design_green);
+  width: 159px;
+  height: 46px;
+  border-radius: var(--new_border_radius);
 }
 .menu-row .mega-menu table td.wide_menu .wrap > .dropdown-menu ul.menu-wrapper > li:first-of-type:before {
   display: none;
@@ -610,7 +614,7 @@ header .menu_top_block.catalogfirst li.full > .dropdown > li:not(.current) > a {
 .mega-menu table td .wrap > a {
   border: none;
   font-weight: bold;
-  padding: 38px 12px 41px;
+  padding: 10px 12px 41px;
   position: relative;
   text-transform: none;
   width: auto;
@@ -649,6 +653,7 @@ body:not(.menu-hovered) .light-menu-color header .logo_and_menu-row .mega-menu t
 
 .logo_and_menu-row .menu-only .mega-menu table td .wrap > a {
   letter-spacing: 0.8px;
+  color: white;
 }
 
 .fix-logo .menu-row .menu-only-wr {

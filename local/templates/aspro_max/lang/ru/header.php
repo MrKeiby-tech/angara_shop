@@ -85,7 +85,7 @@ $MESS["ERROR_ADD_DELAY_ITEM"] = 'Ошибка отложенной корзин�
 $MESS["VIEWED_TITLE"] = "Ранее вы смотрели";
 $MESS["VIEWED_BEFORE"] = "Ранее вы смотрели";
 $MESS["BEST_TITLE"] = "Лучшие предложения";
-$MESS["CT_BST_SEARCH_BUTTON"] = "Поиск";
+$MESS["CT_BST_SEARCH_BUTTON"] = "Поиск по каталогу";
 $MESS["CT_BST_SEARCH2_BUTTON"] = "Найти";
 
 $MESS["BASKET_PRINT_BUTTON"] = "Распечатать";
