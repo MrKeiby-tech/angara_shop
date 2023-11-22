@@ -336,10 +336,10 @@ body .top_slider_wrapp .main-slider__wrapper .text .banner_title .head-title {
 }
 
 .navigation_offset:hover .swiper-button-next {
-  right: 26px;
+  right: 300px;
 }
 .navigation_offset:hover .swiper-button-prev {
-  left: 21px;
+  left: 300px;
 }
 
 .main-slider .swiper-pagination-bullets.swiper-pagination-horizontal{
